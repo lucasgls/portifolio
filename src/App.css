@@ -1,0 +1,85 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2em;
+  text-align: center;
+}
+
+.logo {
+  height: 10em;
+  padding: 1.5em;
+  border-radius: 50%;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #f4f4f4aa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.bio-header{ 
+  color: white;
+  
+}
+
+.bio-header p {
+  color: #8B8B8C;
+}
+
+.social {
+  display: inline-flex;
+  gap: 1em;
+  height: 100%;
+  text-decoration: none;
+}
+
+.container {
+  margin: 2em;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  height: 100%;
+  text-decoration: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container1,.container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  text-decoration: none
+}
+
+.container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+  gap: 1em; 
+  font-size: 0.9rem;
+  font-style: bold;
+  padding: 0.4em 1em;
+  width: 14em; 
+  height: 3.8em;
+  box-sizing: border-box; 
+}
+
+.read-the-docs {
+  color: #888;
+}
