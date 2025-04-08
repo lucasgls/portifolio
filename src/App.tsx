@@ -20,7 +20,7 @@ function App() {
         <h1>Lucas Gabriel Lima Silva</h1>
         <p>Estudante de Engenharia de Software</p>
 
-        <p >
+        <p>
           <a href="https://www.alura.com.br/artigos/backend?srsltid=AfmBOorHIurbTU-VeUMK_uNDc7URi0UyhLlSD8AVWeMf_j1eYFgNifek" target='_blank'>
             <u> Backend</u>
           </a>
