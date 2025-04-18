@@ -16,8 +16,6 @@ Este portfólio foi desenvolvido utilizando as seguintes tecnologias:
 
 O objetivo é fornecer uma visão clara, minimalista e organizada dos meus projetos, facilitando a navegação e compreensão das soluções que desenvolvi.
 
-Além disso, este portfólio é **open source**! Se você gostou da estrutura e se identificou com o modelo de desenvolvimento, sinta-se à vontade para clonar, adaptar e usar como base para o seu. Só peço que, se curtir o trabalho, deixe uma ⭐ de gratidão! 😄
-
 ---
 
 ## 🚀 Como Executar o Projeto
