@@ -33,7 +33,7 @@
 
 .bio-header{ 
   color: black;
-  
+
 }
 
 .bio-header p {
@@ -80,6 +80,56 @@
   box-sizing: border-box; 
 }
 
-.read-the-docs {
-  color: #888;
+/*  /////////////////////////////////////          */
+.container-copy {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  font-family: 'Inter', sans-serif;
+  color: #f1f1f1;
 }
+
+.copyDiv {
+  display: flex;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 0.5em;
+  border-radius: 10px;
+  border: 1px solid #444;
+  gap: 0.5em;
+  width: fit-content;
+  height: 2em;
+}
+
+.copyInput {
+  background-color: transparent;
+  border: none;
+  color: #646cff;
+  font-family: 'Space Mono', monospace;
+  font-size: 1rem;
+  width: 16em;
+  outline: none;
+  cursor: default;
+}
+
+.copyButton {
+  background-color: #fafafa;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 8px;
+  padding: 0.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.copyButton:hover {
+  transform: scale(1.05);
+}
+
+.copyButton:active {
+  transform: scale(0.95);
+}
+

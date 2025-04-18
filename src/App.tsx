@@ -77,14 +77,27 @@ function App() {
         </div>
 
       </div>
+      
+      <div className='container-copy'>
+        <p>Você pode entrar em contato comigo por aqui:</p>
+        <div className='copyDiv'>
+          <input 
+            value="lucasglsilva7@gmail.com"
+            className="copyInput"
+            name='text'
+            type="text" 
+            readOnly>
+          </input>
+          <button className='copyButton'>
+            <Copy
+              size={"20"}
+            />
+          </button>
+        </div>
+      </div>
 
       <p>
         By <code>Lucas Gabriel</code> seu futuro engenheiro.
-      </p>
-      <p className="read-the-docs">
-        Clique aqui para copiar meu e-mail de contato  
-        <a href="mailto:lucasglsilva7@gmail.com" className="email-link"> lucasglsilva7@gmail.com</a>
-        <Copy/>  
       </p>
     </>
   )
