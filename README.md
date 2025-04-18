@@ -1,54 +1,28 @@
-# React + TypeScript + Vite
+# STATUS (em desenvolvimento ⏳)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🧑‍💻 Portfólio de Projetos – Lucas Gabriel Lima Silva
 
-Currently, two official plugins are available:
+Bem-vindo ao meu portfólio! Este repositório reúne os principais projetos que desenvolvi para consolidar e demonstrar minhas habilidades em desenvolvimento de software.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 Sobre o Portfólio
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Este portfólio foi desenvolvido utilizando as seguintes tecnologias:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React** com **TypeScript**
+- **Vite** para bundling e desenvolvimento rápido
+- **ESLint** com regras personalizadas para manter a qualidade do código
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+O objetivo é fornecer uma visão clara, minimalista e organizada dos meus projetos, facilitando a navegação e compreensão das soluções que desenvolvi.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🚀 Como Executar o Projeto
+
+Para rodar o projeto localmente, siga os passos abaixo:
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/lucasgls/portifolio.git
