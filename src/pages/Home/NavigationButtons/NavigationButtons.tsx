@@ -1,10 +1,19 @@
 import { FaFolderOpen, FaMicrochip, FaGraduationCap, FaUser } from 'react-icons/fa'
 
-export default function NavigationButtons() {
+interface NavigationButtonsProps {
+  onNavigate: (page: 'home' | 'projects') => void
+  currentPage: 'home' | 'projects'
+}
+
+export default function NavigationButtons({ onNavigate }: NavigationButtonsProps) {
+  const handleNavigation = (page: 'home' | 'projects') => {
+    onNavigate(page)
+  }
+
   return (
     <div className="container">
       <div className="container1">
-        <button>
+        <button onClick={() => handleNavigation('projects')}>
           <FaFolderOpen />
           <p>Projetos</p>
         </button>
