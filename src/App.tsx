@@ -1,13 +1,13 @@
 
 import './App.css'
-import { Linkedin, Github, Instagram, FolderKanban, Microchip, GraduationCap, PersonStanding, Copy} from 'lucide-react';
-import { Header } from './components/header';
+import { FolderKanban, Microchip, GraduationCap, PersonStanding, Copy } from 'lucide-react';
+import { HeroSection } from './components/HeroSection/HeroSection';
 
 function App() {
 
   return (
     <>
-      <Header />
+      <HeroSection />
 
       <div className="container">
 
@@ -48,16 +48,12 @@ function App() {
             readOnly>
           </input>
           <button className='copyButton'>
-            <Copy
-              size={"20"}
-            />
+            <Copy />
           </button>
         </div>
       </div>
-
-      <p>
-        By <code>Lucas Gabriel</code> seu futuro engenheiro.
-      </p>
+      
+      <p>By `Lucas Gabriel` seu futuro engenheiro.</p>
     </>
   )
 }

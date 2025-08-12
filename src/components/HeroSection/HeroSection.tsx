@@ -1,7 +1,7 @@
-import lucasLogo from '../assets/icon-face-whiteBG.png'
-import { Linkedin, Github, Instagram } from 'lucide-react';
+import lucasLogo from '../../assets/icon-face-whiteBG.png'
+import { Linkedin, Github, Instagram} from 'lucide-react';
 
-export function Header () {
+export function HeroSection () {
     return(
     <>
         <div className="header">
