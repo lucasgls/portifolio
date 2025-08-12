@@ -81,13 +81,7 @@
 }
 
 /*  /////////////////////////////////////          */
-.container-copy {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5em;
-  font-family: 'Inter', sans-serif;
-  color: #f1f1f1;
-}
+
 
 .copyDiv {
   display: flex;
