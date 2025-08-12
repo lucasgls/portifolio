@@ -1,95 +1,61 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2em;
-  text-align: center;
-}
-
 .logo {
   height: 10em;
   padding: 1.5em;
   border-radius: 50%;
-  will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #f4f4f4aa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.bio-header{ 
+.bio-header {
   color: black;
-
 }
 
 .bio-header p {
-  color: #8B8B8C;
+  color: var(--text-secondary);
 }
 
 .social {
   display: inline-flex;
   gap: 1em;
-  height: 100%;
   text-decoration: none;
 }
 
 .container {
   margin: 2em;
   display: flex;
-  flex-direction: row;
   gap: 1em;
-  height: 100%;
-  text-decoration: none;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-.container1,.container2 {
+.container1, .container2 {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  text-decoration: none
 }
 
 .container button {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center; 
-  gap: 1em; 
+  gap: 1em;
   font-size: 0.9rem;
-  font-style: bold;
   padding: 0.4em 1em;
-  width: 14em; 
+  width: 14em;
   height: 3.8em;
-  box-sizing: border-box; 
 }
-
-/*  /////////////////////////////////////          */
-
 
 .copyDiv {
   display: flex;
   align-items: center;
-  background-color: #1a1a1a;
+  background-color: var(--bg-secondary);
   padding: 0.5em;
   border-radius: 10px;
-  border: 1px solid #444;
+  border: 1px solid var(--border-color);
   gap: 0.5em;
   width: fit-content;
   height: 2em;
@@ -98,32 +64,39 @@
 .copyInput {
   background-color: transparent;
   border: none;
-  color: #646cff;
+  color: var(--primary-color);
   font-family: 'Space Mono', monospace;
   font-size: 1rem;
   width: 16em;
   outline: none;
-  cursor: default;
 }
 
 .copyButton {
   background-color: #fafafa;
-  color: #1a1a1a;
+  color: var(--bg-secondary);
   border: none;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   padding: 0.4em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: var(--transition);
 }
 
 .copyButton:hover {
   transform: scale(1.05);
 }
 
-.copyButton:active {
-  transform: scale(0.95);
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
