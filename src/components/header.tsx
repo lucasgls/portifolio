@@ -17,7 +17,7 @@ export function Header () {
                 <a href="https://www.alura.com.br/artigos/backend?srsltid=AfmBOorHIurbTU-VeUMK_uNDc7URi0UyhLlSD8AVWeMf_j1eYFgNifek" target='_blank'>
                     <u>Backend</u>
                 </a>
-                | .NET | C# | ASP.NET Core
+                | Java | Spring Boot | MySQL
             </p>
         </div>
 
