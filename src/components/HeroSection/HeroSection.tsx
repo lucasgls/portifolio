@@ -1,5 +1,5 @@
 import lucasLogo from '../../assets/icon-face-whiteBG.png'
-import { Linkedin, Github, Instagram} from 'lucide-react';
+import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa'
 
 export function HeroSection () {
     return(
@@ -24,19 +24,19 @@ export function HeroSection () {
         <div className='social'>
             <div className='linkedin'>
                 <a href="https://www.linkedin.com/in/lucasgls/" target='_blank'>
-                    <Linkedin />
+                    <FaLinkedin />
                 </a>
             </div>
 
             <div className='github'>
                 <a href="https://github.com/lucasgls" target='_blank'>
-                    <Github />
+                    <FaGithub />
                 </a>
             </div>
 
             <div className='instagram'>
                 <a href="https://www.instagram.com/lucassgls/" target='_blank'>
-                    <Instagram />
+                    <FaInstagram />
                 </a>
             </div>
         </div>
