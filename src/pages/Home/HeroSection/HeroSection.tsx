@@ -1,7 +1,7 @@
-import lucasLogo from '../../assets/icon-face-whiteBG.png'
+import lucasLogo from '../../../assets/icon-face-whiteBG.png'
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa'
 
-export function HeroSection () {
+export default function HeroSection() {
     return(
     <>
         <div className="header">

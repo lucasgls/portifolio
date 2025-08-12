@@ -1,6 +1,6 @@
-import { Copy } from 'lucide-react'
+import { FaCopy } from 'react-icons/fa'
 
-export function ContactSection() {
+export default function ContactSection() {
   return (
     <div className='container-copy'>
       <p>Você pode entrar em contato comigo por aqui:</p>
@@ -13,7 +13,7 @@ export function ContactSection() {
           readOnly
         />
         <button className='copyButton'>
-          <Copy />
+          <FaCopy />
         </button>
       </div>
     </div>

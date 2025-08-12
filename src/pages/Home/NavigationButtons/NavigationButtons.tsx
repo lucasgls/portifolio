@@ -1,28 +1,28 @@
-import { FolderKanban, Microchip, GraduationCap, PersonStanding } from 'lucide-react'
+import { FaFolderOpen, FaMicrochip, FaGraduationCap, FaUser } from 'react-icons/fa'
 
-export function NavigationButtons() {
+export default function NavigationButtons() {
   return (
     <div className="container">
       <div className="container1">
         <button>
-          <FolderKanban />
+          <FaFolderOpen />
           <p>Projetos</p>
         </button>
 
         <button>
-          <Microchip />
+          <FaMicrochip />
           <p>Tecnologias</p>
         </button>
       </div>
 
       <div className="container2">
         <button>
-          <GraduationCap />
+          <FaGraduationCap />
           <p>Estudos</p>
         </button>
 
         <button>
-          <PersonStanding />
+          <FaUser />
           <p>Sobre</p>
         </button>
       </div>
