@@ -9,7 +9,7 @@ interface HomeProps {
 
 export default function Home({ onNavigate, currentPage }: HomeProps) {
   return (
-    <div className="home-page">
+    <div className="min-h-screen flex flex-col justify-center items-center text-center p-8">
       <HeroSection />
       <NavigationButtons onNavigate={onNavigate} currentPage={currentPage} />
       <ContactSection />
