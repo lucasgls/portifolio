@@ -1,10 +1,9 @@
 import { FaHome, FaGraduationCap, FaCog, FaUser } from 'react-icons/fa'
+import type { NavigationProps } from '../types'
 
-interface ProjectsNavigationProps {
-    onNavigate: (page: 'home' | 'projects') => void
-}
+interface ProjectsNavigationProps extends NavigationProps {}
 
-export default function ProjectsNavigation({ onNavigate }: ProjectsNavigationProps) {
+export function ProjectsNavigation({ onNavigate }: ProjectsNavigationProps) {
     return (
         <div className="bg-[rgba(255,255,255,0.08)] backdrop-blur-[30px] border border-[rgba(255,255,255,0.12)] rounded-[20px] px-2 py-2 shadow-[0_8px_32px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,0.1)]">
             <div className="flex items-center gap-1">

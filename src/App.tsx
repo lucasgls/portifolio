@@ -1,7 +1,7 @@
 
 import { useState } from 'react'
 import Home from './pages/Home/Home'
-import Projects from './pages/Projects/Projects'
+import { Projects } from './pages/Projects'
 
 type Page = 'home' | 'projects'
 

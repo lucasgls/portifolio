@@ -1,7 +1,7 @@
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { projects } from './projectsData'
 
-export default function ProjectsList() {
+export function ProjectsList() {
   return (
     <div className="grid grid-cols-1 gap-12 mb-16 max-w-[800px] mx-auto">
       {projects.map((project, index) => {
