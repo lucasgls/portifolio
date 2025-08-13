@@ -1,4 +1,4 @@
-import { FaArrowLeft } from 'react-icons/fa'
+import { FaHome, FaGraduationCap, FaCog, FaUser } from 'react-icons/fa'
 
 interface ProjectsNavigationProps {
     onNavigate: (page: 'home' | 'projects') => void
@@ -6,15 +6,28 @@ interface ProjectsNavigationProps {
 
 export default function ProjectsNavigation({ onNavigate }: ProjectsNavigationProps) {
     return (
-        <nav className="fixed top-0 left-4 right-4 bg-[rgba(36,36,36,0.95)] backdrop-blur-[10px] border-b border-[var(--border-color)] rounded-b-xl px-8 py-4 flex items-center gap-8 z-[1000] h-[70px] md:left-2 md:right-2 md:px-4 md:h-[60px]">
-            <button
-                onClick={() => onNavigate('home')}
-                className="flex items-center gap-2 bg-transparent text-[var(--text-secondary)] border border-[var(--border-color)] px-4 py-2 rounded-md text-[15px] cursor-pointer transition-all duration-300 hover:text-[var(--text-primary)] hover:border-[var(--primary-color)] hover:bg-[rgba(100,108,255,0.1)] sm:[&>span]:hidden"
-            >
-                <FaArrowLeft />
-                <span>Voltar</span>
-            </button>
-            <h1 className="text-[28px] text-[var(--text-primary)] m-0 font-semibold md:text-xl">Projetos</h1>
-        </nav>
+        <div className="bg-[rgba(255,255,255,0.08)] backdrop-blur-[30px] border border-[rgba(255,255,255,0.12)] rounded-[20px] px-2 py-2 shadow-[0_8px_32px_rgba(0,0,0,0.08),inset_0_1px_0_rgba(255,255,255,0.1)]">
+            <div className="flex items-center gap-1">
+                <button 
+                    onClick={() => onNavigate('home')}
+                    className="flex items-center gap-2 px-4 py-2 rounded-[14px] text-[rgba(255,255,255,0.9)] hover:bg-[rgba(255,255,255,0.12)] transition-all duration-[300ms] ease-[cubic-bezier(0.4,0,0.2,1)] text-[14px] font-[500]"
+                >
+                    <FaHome className="text-[14px]" />
+                    <span>Home</span>
+                </button>
+                <button className="flex items-center gap-2 px-4 py-2 rounded-[14px] text-[rgba(255,255,255,0.7)] hover:bg-[rgba(255,255,255,0.12)] hover:text-[rgba(255,255,255,0.9)] transition-all duration-[300ms] ease-[cubic-bezier(0.4,0,0.2,1)] text-[14px] font-[500]">
+                    <FaGraduationCap className="text-[14px]" />
+                    <span>Estudos</span>
+                </button>
+                <button className="flex items-center gap-2 px-4 py-2 rounded-[14px] text-[rgba(255,255,255,0.7)] hover:bg-[rgba(255,255,255,0.12)] hover:text-[rgba(255,255,255,0.9)] transition-all duration-[300ms] ease-[cubic-bezier(0.4,0,0.2,1)] text-[14px] font-[500]">
+                    <FaCog className="text-[14px]" />
+                    <span>Tecnologias</span>
+                </button>
+                <button className="flex items-center gap-2 px-4 py-2 rounded-[14px] text-[rgba(255,255,255,0.7)] hover:bg-[rgba(255,255,255,0.12)] hover:text-[rgba(255,255,255,0.9)] transition-all duration-[300ms] ease-[cubic-bezier(0.4,0,0.2,1)] text-[14px] font-[500]">
+                    <FaUser className="text-[14px]" />
+                    <span>Sobre</span>
+                </button>
+            </div>
+        </div>
     )
 }
