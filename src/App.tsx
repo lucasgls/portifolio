@@ -2,8 +2,9 @@
 import { useState } from 'react'
 import Home from './pages/Home/Home'
 import { Projects } from './pages/Projects'
+import { About } from './pages/About'
 
-type Page = 'home' | 'projects'
+type Page = 'home' | 'projects' | 'about'
 
 function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home')
@@ -12,6 +13,8 @@ function App() {
     switch (currentPage) {
       case 'projects':
         return <Projects onNavigate={setCurrentPage} />
+      case 'about':
+        return <About onNavigate={setCurrentPage} />
       default:
         return <Home onNavigate={setCurrentPage} currentPage={currentPage} />
     }

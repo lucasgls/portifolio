@@ -3,8 +3,8 @@ import NavigationButtons from './NavigationButtons/NavigationButtons'
 import ContactSection from './ContactSection/ContactSection'
 
 interface HomeProps {
-  onNavigate: (page: 'home' | 'projects') => void
-  currentPage: 'home' | 'projects'
+  onNavigate: (page: 'home' | 'projects' | 'about') => void
+  currentPage: 'home' | 'projects' | 'about'
 }
 
 export default function Home({ onNavigate, currentPage }: HomeProps) {
