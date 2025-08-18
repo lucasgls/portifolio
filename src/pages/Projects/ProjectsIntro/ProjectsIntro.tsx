@@ -11,11 +11,10 @@ export function ProjectsIntro() {
           
           <div className="space-y-2">
             <h3 className="text-sm font-medium uppercase tracking-wider text-zinc-300">
-              Nota
+              Projetos
             </h3>
             <p className="text-sm leading-relaxed text-zinc-400">
-              Esses são meus projetos pessoais, desenvolvidos com diferentes tecnologias e abordagens, 
-              com o objetivo de demonstrar minhas habilidades e conhecimentos na área de desenvolvimento.
+              Esses são meus projetos pessoais, desenvolvidos com o objetivo de demonstrar minhas habilidades e conhecimentos.
             </p>
           </div>
         </div>

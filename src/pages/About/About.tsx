@@ -3,7 +3,7 @@ import { AboutIntro } from './AboutIntro/AboutIntro'
 import { AboutContent } from './AboutContent/AboutContent'
 
 interface AboutProps {
-  onNavigate: (page: 'home' | 'projects' | 'about') => void
+  onNavigate: (page: 'home' | 'projects' | 'about' | 'technologies' | 'blog') => void
 }
 
 export function About({ onNavigate }: AboutProps) {

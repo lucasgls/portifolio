@@ -3,7 +3,7 @@ import { TechnologiesIntro } from './TechnologiesIntro/TechnologiesIntro'
 import { TechnologiesContent } from './TechnologiesContent/TechnologiesContent'
 
 interface TechnologiesProps {
-  onNavigate: (page: 'home' | 'projects' | 'about' | 'technologies') => void
+  onNavigate: (page: 'home' | 'projects' | 'about' | 'technologies' | 'blog') => void
 }
 
 export function Technologies({ onNavigate }: TechnologiesProps) {

@@ -2,6 +2,7 @@ import { FaFolderOpen, FaMicrochip, FaUser, FaPen } from 'react-icons/fa';
 
 interface NavigationButtonsProps {
   onNavigate: (page: 'home' | 'projects' | 'about' | 'technologies' | 'blog') => void
+  currentPage?: 'home' | 'projects' | 'about' | 'technologies' | 'blog'
 }
 
 export default function NavigationButtons({ onNavigate }: NavigationButtonsProps) {

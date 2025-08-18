@@ -27,5 +27,18 @@ export const projects: Project[] = [
       alt: 'MySQL2 Client Demo'
     }
   },
-
+  {
+    id: 3,
+    title: "Portfolio Website",
+    emoji: "🌐",
+    description: "Meu portfólio pessoal desenvolvido com React, TypeScript e Tailwind CSS. Apresenta meus projetos, habilidades e experiências de forma interativa e responsiva.",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+    githubUrl: "https://github.com/lucasgls/portifolio",
+    liveUrl: "https://lucasgls.github.io/portifolio",
+    preview: {
+      type: 'image',
+      url: 'https://github.com/user-attachments/assets/fa216836-c22c-4f8f-9c88-c5d2f7b6610d',
+      alt: 'Portfolio Website Preview'
+    }
+  }
 ]
