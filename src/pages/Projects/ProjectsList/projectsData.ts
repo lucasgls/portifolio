@@ -18,7 +18,7 @@ export const projects: Project[] = [
     id: 2,
     title: "IAnalisador",
     emoji: "🤖",
-    description: "Projeto do senai, onde criei um site de analise de curriculo de acordo com vagas pre salvas, rankeando candidatos com perfil mais proximo do esperado",
+    description: "Projeto do senai, onde criei um site de analise utilizando solucao de IA do Azure para analise de curriculo de acordo com vagas pre salvas, rankeando candidatos com perfil mais proximo do esperado.",
     technologies: ["Azure", "Python"],
     githubUrl: "https://github.com/sidorares/node-mysql2",
     preview: {
