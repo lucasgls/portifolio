@@ -94,7 +94,7 @@ export const technologiesData: Technology[] = [
     id: 'aws',
     name: 'AWS',
     category: 'cloud',
-    icon: 'devicon-amazonwebservices-original',
+    icon: 'devicon-amazonwebservices-plain-wordmark',
     description: 'Plataforma de serviços em nuvem para hospedagem e escalabilidade de aplicações.',
     color: '#ff9900'
   },
