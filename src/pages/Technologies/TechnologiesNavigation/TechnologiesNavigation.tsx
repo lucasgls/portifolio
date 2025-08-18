@@ -1,7 +1,7 @@
 import { FaHome, FaGraduationCap, FaCog, FaUser } from 'react-icons/fa'
 import type { NavigationProps } from '../types'
 
-interface TechnologiesNavigationProps extends NavigationProps {}
+type TechnologiesNavigationProps = NavigationProps;
 
 export function TechnologiesNavigation({ onNavigate }: TechnologiesNavigationProps) {
     return (
@@ -19,7 +19,7 @@ export function TechnologiesNavigation({ onNavigate }: TechnologiesNavigationPro
                     className="flex items-center gap-2 px-4 py-2 rounded-[14px] text-[rgba(255,255,255,0.7)] hover:bg-[rgba(255,255,255,0.12)] hover:text-[rgba(255,255,255,0.9)] transition-all duration-[300ms] ease-[cubic-bezier(0.4,0,0.2,1)] text-[14px] font-[500]"
                 >
                     <FaGraduationCap className="text-[14px]" />
-                    <span>Estudos</span>
+                    <span>Projetos</span>
                 </button>
                 <button className="flex items-center gap-2 px-5 py-2.5 rounded-[16px] text-[rgba(255,255,255,0.95)] bg-[rgba(255,255,255,0.15)] backdrop-blur-[20px] border border-[rgba(255,255,255,0.2)] shadow-[0_2px_8px_rgba(0,0,0,0.1)] transition-all duration-[300ms] ease-[cubic-bezier(0.4,0,0.2,1)] text-[15px] font-[600] scale-105">
                     <FaCog className="text-[15px]" />

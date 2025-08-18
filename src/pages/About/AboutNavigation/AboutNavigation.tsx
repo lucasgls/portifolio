@@ -19,9 +19,12 @@ export function AboutNavigation({ onNavigate }: AboutNavigationProps) {
                     className="flex items-center gap-2 px-4 py-2 rounded-[14px] text-[rgba(255,255,255,0.7)] hover:bg-[rgba(255,255,255,0.12)] hover:text-[rgba(255,255,255,0.9)] transition-all duration-[300ms] ease-[cubic-bezier(0.4,0,0.2,1)] text-[14px] font-[500]"
                 >
                     <FaGraduationCap className="text-[14px]" />
-                    <span>Estudos</span>
+                    <span>Projetos</span>
                 </button>
-                <button className="flex items-center gap-2 px-4 py-2 rounded-[14px] text-[rgba(255,255,255,0.7)] hover:bg-[rgba(255,255,255,0.12)] hover:text-[rgba(255,255,255,0.9)] transition-all duration-[300ms] ease-[cubic-bezier(0.4,0,0.2,1)] text-[14px] font-[500]">
+                <button 
+                    onClick={() => onNavigate('technologies')}
+                    className="flex items-center gap-2 px-4 py-2 rounded-[14px] text-[rgba(255,255,255,0.7)] hover:bg-[rgba(255,255,255,0.12)] hover:text-[rgba(255,255,255,0.9)] transition-all duration-[300ms] ease-[cubic-bezier(0.4,0,0.2,1)] text-[14px] font-[500]"
+                >
                     <FaCog className="text-[14px]" />
                     <span>Tecnologias</span>
                 </button>
