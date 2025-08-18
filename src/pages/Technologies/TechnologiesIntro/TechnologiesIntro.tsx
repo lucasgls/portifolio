@@ -1,3 +1,5 @@
+import { Settings } from 'lucide-react'
+
 export function TechnologiesIntro() {
   return (
     <section className="mb-8 max-w-[800px] mx-auto">
@@ -6,7 +8,7 @@ export function TechnologiesIntro() {
         
         <div className="flex items-start gap-4">
           <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#646cff]/20 bg-[#646cff]/10">
-            <span className="text-lg text-[#646cff]">⚙️</span>
+            <Settings size={20} className="text-[#646cff]" />
           </div>
           
           <div className="space-y-2">

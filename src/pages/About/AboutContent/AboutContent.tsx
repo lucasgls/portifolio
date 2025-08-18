@@ -1,4 +1,5 @@
 import euPhoto from '../../../assets/eu.jpeg'
+import { Settings, Target } from 'lucide-react'
 
 export function AboutContent() {
   return (
@@ -46,7 +47,7 @@ export function AboutContent() {
 
           <div className="bg-[var(--bg-secondary)] border border-[var(--border-color)] rounded-xl p-6 transition-all duration-300 hover:border-[rgba(100,108,255,0.5)]">
             <h3 className="text-[22px] text-[var(--text-primary)] font-semibold mb-4 flex items-center gap-2">
-              <span className="text-lg">⚙️</span>
+              <Settings size={20} className="text-[var(--accent-color)]" />
               Habilidades Backend
             </h3>
             <ul className="space-y-2 text-[var(--text-secondary)]">
@@ -76,7 +77,7 @@ export function AboutContent() {
 
           <div className="bg-[var(--bg-secondary)] border border-[var(--border-color)] rounded-xl p-6 transition-all duration-300 hover:border-[rgba(100,108,255,0.5)]">
             <h3 className="text-[22px] text-[var(--text-primary)] font-semibold mb-4 flex items-center gap-2">
-              <span className="text-lg">🎯</span>
+              <Target size={20} className="text-[var(--accent-color)]" />
               Especialidades
             </h3>
             <ul className="space-y-2 text-[var(--text-secondary)]">

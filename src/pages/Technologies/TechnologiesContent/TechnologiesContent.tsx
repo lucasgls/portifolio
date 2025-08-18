@@ -1,76 +1,36 @@
 import { getCategorizedTechnologies } from '../data/technologiesData'
 import type { Technology } from '../types'
+import {
+  Code,
+  Layers,
+  HardDrive,
+  Wrench,
+  Cloud
+} from 'lucide-react'
 
 interface TechnologyCardProps {
   technology: Technology
 }
 
 function TechnologyCard({ technology }: TechnologyCardProps) {
-  const getLevelColor = (level: Technology['level']) => {
-    switch (level) {
-      case 'beginner':
-        return 'text-yellow-400'
-      case 'intermediate':
-        return 'text-blue-400'
-      case 'advanced':
-        return 'text-green-400'
-      default:
-        return 'text-gray-400'
-    }
-  }
-
-  const getLevelText = (level: Technology['level']) => {
-    switch (level) {
-      case 'beginner':
-        return 'Iniciante'
-      case 'intermediate':
-        return 'Intermediário'
-      case 'advanced':
-        return 'Avançado'
-      default:
-        return 'N/A'
-    }
-  }
-
   return (
-    <div className="bg-[var(--bg-secondary)] border border-[var(--border-color)] rounded-xl p-6 transition-all duration-300 hover:border-[rgba(100,108,255,0.5)] hover:transform hover:scale-[1.02] group">
-      <div className="flex items-start gap-4">
+    <div className="bg-[var(--bg-secondary)] border border-[var(--border-color)] rounded-xl p-8 transition-all duration-300 hover:border-[rgba(100,108,255,0.5)] hover:transform hover:scale-[1.02] group hover:shadow-lg">
+      <div className="flex flex-col items-center text-center space-y-4">
+        {/* Ícone da tecnologia */}
         <div className="flex-shrink-0">
-          <div 
-            className="w-12 h-12 rounded-lg flex items-center justify-center text-2xl border border-[var(--border-color)] group-hover:border-[rgba(100,108,255,0.3)] transition-all duration-300"
+          <div
+            className="w-16 h-16 rounded-xl flex items-center justify-center text-3xl border border-[var(--border-color)] group-hover:border-[rgba(100,108,255,0.3)] transition-all duration-300 shadow-sm"
             style={{ backgroundColor: `${technology.color}15` }}
           >
-            {technology.icon}
+            <i className={technology.icon} style={{ color: technology.color, fontSize: '32px' }}></i>
           </div>
         </div>
-        
-        <div className="flex-1 space-y-3">
-          <div className="flex items-center justify-between">
-            <h3 className="text-[18px] text-[var(--text-primary)] font-semibold">
-              {technology.name}
-            </h3>
-            <span className={`text-[12px] font-medium px-2 py-1 rounded-full bg-[var(--bg-primary)] ${getLevelColor(technology.level)}`}>
-              {getLevelText(technology.level)}
-            </span>
-          </div>
-          
-          <p className="text-[14px] text-[var(--text-secondary)] leading-relaxed">
-            {technology.description}
-          </p>
-          
-          <div className="flex items-center gap-2">
-            <div 
-              className="w-2 h-2 rounded-full"
-              style={{ backgroundColor: technology.color }}
-            ></div>
-            <span className="text-[12px] text-[var(--text-secondary)] capitalize">
-              {technology.category === 'language' ? 'Linguagem' :
-               technology.category === 'framework' ? 'Framework' :
-               technology.category === 'database' ? 'Banco de Dados' :
-               technology.category === 'tool' ? 'Ferramenta' :
-               technology.category === 'cloud' ? 'Cloud' : technology.category}
-            </span>
-          </div>
+
+        {/* Nome da tecnologia */}
+        <div>
+          <h3 className="text-[16px] text-[var(--text-primary)] font-semibold">
+            {technology.name}
+          </h3>
         </div>
       </div>
     </div>
@@ -79,18 +39,18 @@ function TechnologyCard({ technology }: TechnologyCardProps) {
 
 interface CategorySectionProps {
   title: string
-  emoji: string
+  icon: React.ReactNode
   technologies: Technology[]
 }
 
-function CategorySection({ title, emoji, technologies }: CategorySectionProps) {
+function CategorySection({ title, icon, technologies }: CategorySectionProps) {
   return (
     <section className="space-y-4">
       <h2 className="text-[20px] text-[var(--text-primary)] font-semibold flex items-center gap-2 mb-6">
-        <span className="text-lg">{emoji}</span>
+        <span className="text-lg">{icon}</span>
         {title}
       </h2>
-      <div className="grid md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {technologies.map((technology) => (
           <TechnologyCard key={technology.id} technology={technology} />
         ))}
@@ -109,31 +69,31 @@ export function TechnologiesContent() {
         <div className="space-y-12">
           <CategorySection
             title="Linguagens de Programação"
-            emoji="💻"
+            icon={<Code className="text-yellow-400" />}
             technologies={categorizedTechnologies.languages}
           />
-          
+
           <CategorySection
             title="Frameworks & Bibliotecas"
-            emoji="🚀"
+            icon={<Layers className="text-blue-400" />}
             technologies={categorizedTechnologies.frameworks}
           />
-          
+
           <CategorySection
             title="Bancos de Dados"
-            emoji="🗄️"
+            icon={<HardDrive className="text-blue-600" />}
             technologies={categorizedTechnologies.databases}
           />
-          
+
           <CategorySection
             title="Ferramentas & DevOps"
-            emoji="🛠️"
+            icon={<Wrench className="text-blue-500" />}
             technologies={categorizedTechnologies.tools}
           />
-          
+
           <CategorySection
             title="Cloud & Infraestrutura"
-            emoji="☁️"
+            icon={<Cloud className="text-blue-400" />}
             technologies={categorizedTechnologies.cloud}
           />
         </div>

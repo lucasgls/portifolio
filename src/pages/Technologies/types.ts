@@ -10,6 +10,5 @@ export interface Technology {
   category: 'language' | 'framework' | 'database' | 'tool' | 'cloud'
   icon: string
   description: string
-  level: 'beginner' | 'intermediate' | 'advanced'
   color: string
 }
