@@ -5,6 +5,7 @@ import { Projects } from './pages/Projects'
 import { About } from './pages/About'
 import { Technologies } from './pages/Technologies'
 import { Blog } from './pages/Blog'
+import ScrollToTop from './components/ScrollToTop'
 
 type Page = 'home' | 'projects' | 'about' | 'technologies' | 'blog'
 
@@ -29,6 +30,7 @@ function App() {
   return (
     <div className="App">
       {renderPage()}
+      <ScrollToTop />
     </div>
   )
 }
