@@ -6,37 +6,25 @@ export const technologiesData: Technology[] = [
     id: 'java',
     name: 'Java',
     category: 'language',
-    icon: '☕',
-    description: 'Linguagem principal para desenvolvimento backend, com foco em APIs robustas e escaláveis.',
-    level: 'advanced',
+    icon: 'devicon-java-plain',
+    description: 'Minha linguagem Principal',
     color: '#f89820'
-  },
-  {
-    id: 'javascript',
-    name: 'JavaScript',
-    category: 'language',
-    icon: '🟨',
-    description: 'Linguagem versátil para desenvolvimento frontend e backend, essencial para aplicações web.',
-    level: 'intermediate',
-    color: '#f7df1e'
   },
   {
     id: 'typescript',
     name: 'TypeScript',
     category: 'language',
-    icon: '🔷',
-    description: 'Superset do JavaScript que adiciona tipagem estática, melhorando a qualidade do código.',
-    level: 'intermediate',
+    icon: 'devicon-typescript-plain',
+    description: 'Minha linguagem que utilizo no Front por ser tipada e ter uma base semelhante a do Java',
     color: '#3178c6'
   },
   {
     id: 'python',
     name: 'Python',
     category: 'language',
-    icon: '🐍',
-    description: 'Linguagem para automação, scripts e desenvolvimento de APIs simples e eficientes.',
-    level: 'intermediate',
-    color: '#3776ab'
+    icon: 'devicon-python-plain',
+    description: 'Linguagem que uso para projetos rápidos, MVPs por sua simplicidade',
+    color: '#ffff00'
   },
 
   // Frameworks
@@ -44,27 +32,24 @@ export const technologiesData: Technology[] = [
     id: 'spring-boot',
     name: 'Spring Boot',
     category: 'framework',
-    icon: '🍃',
-    description: 'Framework Java para criação de aplicações enterprise com configuração mínima.',
-    level: 'advanced',
+    icon: 'devicon-spring-plain',
+    description: 'Framework Java para criação de aplicações robustas e escaláveis.',
     color: '#6db33f'
   },
   {
     id: 'react',
     name: 'React',
     category: 'framework',
-    icon: '⚛️',
-    description: 'Biblioteca JavaScript para construção de interfaces de usuário interativas.',
-    level: 'intermediate',
+    icon: 'devicon-react-original',
+    description: 'Biblioteca JavaScript para construção de interfaces.',
     color: '#61dafb'
   },
   {
     id: 'tailwind',
     name: 'Tailwind CSS',
     category: 'framework',
-    icon: '🎨',
+    icon: 'devicon-tailwindcss-plain',
     description: 'Framework CSS utility-first para criação rápida de interfaces modernas.',
-    level: 'intermediate',
     color: '#06b6d4'
   },
 
@@ -73,18 +58,16 @@ export const technologiesData: Technology[] = [
     id: 'mysql',
     name: 'MySQL',
     category: 'database',
-    icon: '🐬',
-    description: 'Sistema de gerenciamento de banco de dados relacional amplamente utilizado.',
-    level: 'advanced',
+    icon: 'devicon-mysql-plain',
+    description: 'Meu banco de dados fav <3.',
     color: '#4479a1'
   },
   {
     id: 'postgresql',
     name: 'PostgreSQL',
     category: 'database',
-    icon: '🐘',
+    icon: 'devicon-postgresql-plain',
     description: 'Banco de dados relacional avançado com recursos robustos e alta performance.',
-    level: 'intermediate',
     color: '#336791'
   },
 
@@ -93,28 +76,17 @@ export const technologiesData: Technology[] = [
     id: 'docker',
     name: 'Docker',
     category: 'tool',
-    icon: '🐳',
+    icon: 'devicon-docker-plain',
     description: 'Plataforma de containerização para desenvolvimento e deploy de aplicações.',
-    level: 'intermediate',
     color: '#2496ed'
   },
   {
     id: 'git',
     name: 'Git',
     category: 'tool',
-    icon: '📝',
+    icon: 'devicon-git-plain',
     description: 'Sistema de controle de versão distribuído para gerenciamento de código.',
-    level: 'advanced',
     color: '#f05032'
-  },
-  {
-    id: 'maven',
-    name: 'Maven',
-    category: 'tool',
-    icon: '📦',
-    description: 'Ferramenta de automação e gerenciamento de dependências para projetos Java.',
-    level: 'intermediate',
-    color: '#c71a36'
   },
 
   // Cloud
@@ -122,18 +94,16 @@ export const technologiesData: Technology[] = [
     id: 'aws',
     name: 'AWS',
     category: 'cloud',
-    icon: '☁️',
+    icon: 'devicon-amazonwebservices-original',
     description: 'Plataforma de serviços em nuvem para hospedagem e escalabilidade de aplicações.',
-    level: 'beginner',
     color: '#ff9900'
   },
   {
     id: 'azure',
     name: 'Azure',
     category: 'cloud',
-    icon: '🌐',
+    icon: 'devicon-azure-plain',
     description: 'Plataforma de computação em nuvem da Microsoft para soluções enterprise.',
-    level: 'beginner',
     color: '#0078d4'
   }
 ]
