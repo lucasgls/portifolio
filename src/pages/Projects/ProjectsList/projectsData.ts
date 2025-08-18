@@ -11,7 +11,7 @@ export const projects: Project[] = [
     preview: {
       type: 'image',
       url: 'https://github.com/user-attachments/assets/fa216836-c22c-4f8f-9c88-c5d2f7b6610d',
-      alt: 'LRU Cache Performance Demo'
+      alt: 'null'
     }
   },
   {
@@ -23,22 +23,8 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/sidorares/node-mysql2",
     preview: {
       type: 'image',
-      url: 'https://github.com/user-attachments/assets/fa216836-c22c-4f8f-9c88-c5d2f7b6610d',
-      alt: 'MySQL2 Client Demo'
-    }
-  },
-  {
-    id: 3,
-    title: "Portfolio Website",
-    emoji: "🌐",
-    description: "Meu portfólio pessoal desenvolvido com React, TypeScript e Tailwind CSS. Apresenta meus projetos, habilidades e experiências de forma interativa e responsiva.",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
-    githubUrl: "https://github.com/lucasgls/portifolio",
-    liveUrl: "https://lucasgls.github.io/portifolio",
-    preview: {
-      type: 'image',
-      url: 'https://github.com/user-attachments/assets/fa216836-c22c-4f8f-9c88-c5d2f7b6610d',
-      alt: 'Portfolio Website Preview'
+      url: 'https://github.com/user-attachments/assets/efc249bb-f84a-47d4-b4b2-9630c275458c',
+      alt: 'null'
     }
   }
 ]
