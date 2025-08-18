@@ -1,4 +1,4 @@
-import { FaFolderOpen, FaMicrochip, FaGraduationCap, FaUser, FaPen } from 'react-icons/fa';
+import { FaFolderOpen, FaMicrochip, FaUser, FaPen } from 'react-icons/fa';
 
 interface NavigationButtonsProps {
   onNavigate: (page: 'home' | 'projects' | 'about' | 'technologies' | 'blog') => void

@@ -3,8 +3,11 @@ import { projects } from './projectsData'
 
 export function ProjectsList() {
   return (
-    <div className="grid grid-cols-1 gap-12 mb-16 max-w-[800px] mx-auto">
-      {projects.map((project, index) => {
+    <div className="max-w-[900px] mx-auto">
+      {/* Card de fundo estilo folha A4 */}
+      <div className="bg-[var(--bg-secondary)] border border-[var(--border-color)] rounded-2xl p-8 md:p-12 shadow-2xl backdrop-blur-sm">
+        <div className="grid grid-cols-1 gap-12 mb-16 max-w-[800px] mx-auto">
+          {projects.map((project, index) => {
         const isEven = index % 2 === 0;
         return (
           <div 
@@ -80,6 +83,8 @@ export function ProjectsList() {
           </div>
         );
       })}
+        </div>
+      </div>
     </div>
   )
 }
