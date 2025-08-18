@@ -2,7 +2,10 @@ import euPhoto from '../../../assets/eu.jpeg'
 
 export function AboutContent() {
   return (
-    <div className="space-y-8">
+    <div className="max-w-[900px] mx-auto">
+      {/* Card de fundo estilo folha A4 */}
+      <div className="bg-[var(--bg-secondary)] border border-[var(--border-color)] rounded-2xl p-8 md:p-12 shadow-2xl backdrop-blur-sm">
+        <div className="space-y-8">
 
       <section className="max-w-[800px] mx-auto">
         <div className="bg-[var(--bg-secondary)] border border-[var(--border-color)] rounded-xl p-8 transition-all duration-300 hover:border-[rgba(100,108,255,0.5)] md:p-6">
@@ -163,7 +166,8 @@ export function AboutContent() {
           </div>
         </div>
       </section>
- 
+        </div>
+      </div>
     </div>
   )
 }
