@@ -14,7 +14,7 @@ export function AboutContent() {
               <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-start">
 
                 <div className="flex-shrink-0 mt-2 md:mt-6">
-                  <div className="w-32 h-32 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full border border-[var(--border-color)] overflow-hidden mx-auto md:mx-0">
+                  <div className="w-32 h-32 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full border border-[var(--border-color)] overflow-hidden mx-auto">
                     <img
                       src={euPhoto}
                       alt="Lucas"
@@ -28,7 +28,7 @@ export function AboutContent() {
                       href="https://wa.me/5519998991823"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-[var(--bg-primary)] border border-[var(--border-color)] rounded-lg transition-all duration-300 hover:border-[rgba(100,108,255,0.5)] hover:bg-[rgba(100,108,255,0.05)] group"
+                      className="flex items-center justify-center w-10 h-10 bg-[var(--bg-primary)] border border-[var(--border-color)] rounded-lg transition-all duration-300 hover:border-[rgba(100,108,255,0.5)] hover:bg-[rgba(100,108,255,0.05)] group"
                     >
                       <FaWhatsapp className="w-4 h-4 md:w-5 md:h-5 text-[var(--text-secondary)] group-hover:text-[#25D366] transition-colors duration-300" />
                     </a>
