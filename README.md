@@ -15,14 +15,3 @@ Este portfólio foi desenvolvido utilizando as seguintes tecnologias:
 - **ESLint** com regras personalizadas para manter a qualidade do código
 
 O objetivo é fornecer uma visão clara, minimalista e organizada dos meus projetos, facilitando a navegação e compreensão das soluções que desenvolvi.
-
----
-
-## 🚀 Como Executar o Projeto
-
-Para rodar o projeto localmente, siga os passos abaixo:
-
-1. Clone o repositório:
-
-   ```bash
-   git clone https://github.com/lucasgls/portifolio.git
