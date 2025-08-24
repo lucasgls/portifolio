@@ -44,14 +44,6 @@ export const technologiesData: Technology[] = [
     description: 'Biblioteca JavaScript para construção de interfaces.',
     color: '#61dafb'
   },
-  {
-    id: 'tailwind',
-    name: 'Tailwind CSS',
-    category: 'framework',
-    icon: 'devicon-tailwindcss-plain',
-    description: 'Framework CSS utility-first para criação rápida de interfaces modernas.',
-    color: '#06b6d4'
-  },
 
   // Bancos de Dados
   {
@@ -61,14 +53,6 @@ export const technologiesData: Technology[] = [
     icon: 'devicon-mysql-plain',
     description: 'Meu banco de dados fav <3.',
     color: '#4479a1'
-  },
-  {
-    id: 'postgresql',
-    name: 'PostgreSQL',
-    category: 'database',
-    icon: 'devicon-postgresql-plain',
-    description: 'Banco de dados relacional avançado com recursos robustos e alta performance.',
-    color: '#336791'
   },
 
   // Ferramentas
