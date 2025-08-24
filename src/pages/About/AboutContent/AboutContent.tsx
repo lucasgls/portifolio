@@ -154,8 +154,6 @@ export function AboutContent() {
             </div>
           </section>
 
-
-
           <section className="max-w-[800px] mx-auto">
             <div className="bg-[var(--bg-secondary)] border border-[var(--border-color)] rounded-xl p-4 md:p-6 transition-all duration-300 hover:border-[rgba(100,108,255,0.5)]">
               <h3 className="text-[18px] md:text-[22px] text-[var(--text-primary)] font-semibold mb-3 md:mb-4 flex items-center justify-center gap-2">
@@ -199,7 +197,7 @@ export function AboutContent() {
                 </li>
                 <li className="flex items-center gap-2 text-[15px]">
                   <span className="w-2 h-2 bg-[#646cff] rounded-full"></span>
-                  Back-End / POO / GIT - Santander ada TECH+
+                  Backend / POO / GIT - Santander ada TECH+
                 </li>
               </ul>
             </div>
