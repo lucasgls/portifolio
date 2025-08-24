@@ -5,7 +5,7 @@ import { FaWhatsapp, FaLinkedin } from 'react-icons/fa'
 export function AboutContent() {
   return (
     <div className="max-w-[900px] mx-auto">
-      {/* Card de fundo estilo folha A4 */}
+      
       <div className="bg-[var(--bg-secondary)] border border-[var(--border-color)] rounded-2xl p-4 md:p-8 lg:p-12 shadow-2xl backdrop-blur-sm">
         <div className="space-y-6 md:space-y-8">
 
@@ -22,7 +22,7 @@ export function AboutContent() {
                     />
                   </div>
 
-                  {/* Ícones de contato abaixo da foto */}
+                  
                   <div className="flex justify-center gap-1.5 md:gap-2 mt-3 md:mt-4 flex-wrap">
                     <a
                       href="https://wa.me/5519998991823"
@@ -79,15 +79,14 @@ export function AboutContent() {
                 <div className="space-y-3 md:space-y-4 text-[var(--text-secondary)] leading-relaxed flex-1">
                   <h2 className="text-[18px] md:text-[22px] text-[var(--text-primary)] font-semibold mb-3 md:mb-4 text-center md:text-left">Quem sou eu</h2>
                   <p className="text-[14px] md:text-[15px] text-center md:text-left">
-                    Olá! Sou Lucas, estudante de Engenharia de Software na USF e apaixonado por desenvolvimento backend.
-                    Minha jornada na programação começou aos 16 anos no ensino médio quando descobri o poder de criar soluções
-                    que conectam pessoas e resolvem problemas reais através da tecnologia.
+                    Olá! Sou o Lucas, estudante de Engenharia de Software e técnico em TI.
+                    Sou apaixonado por desenvolvimento e soluções inovadoras.
+                    Curioso e interessado por tecnologia desde cedo, sempre fui o resolvedor de problemas por onde passei. 
                   </p>
                   <p className="text-[14px] md:text-[15px] text-center md:text-left">
-                    Atualmente programo com Java e Spring Boot, criando APIs robustas e escaláveis.
-                    Tenho experiência prática com MySQL e PostgreSQL além de implementar
-                    arquiteturas baseadas em microsserviços. Meu foco está em escrever código limpo,
-                    performático e que seja fácil de manter e evoluir.
+                    Atualmente, programo com Java e Spring Boot, desenvolvendo APIs RESTful.
+                    Tenho experiência prática com MySQL, além de implementar arquiteturas RESTful. 
+                    Também gosto de automatizar tarefas com Python e explorar soluções de IA utilizando serviços do Azure.
                   </p>
                 </div>
               </div>
@@ -110,19 +109,19 @@ export function AboutContent() {
                   </li>
                   <li className="flex items-center gap-2 text-[14px] md:text-[15px]">
                     <span className="w-2 h-2 bg-[#646cff] rounded-full"></span>
-                    MySQL & PostgreSQL
+                    MySQL
                   </li>
                   <li className="flex items-center gap-2 text-[14px] md:text-[15px]">
                     <span className="w-2 h-2 bg-[#646cff] rounded-full"></span>
-                    APIs REST & GraphQL
+                    APIs RESTful
                   </li>
                   <li className="flex items-center gap-2 text-[14px] md:text-[15px]">
                     <span className="w-2 h-2 bg-[#646cff] rounded-full"></span>
-                    Docker & Kubernetes
+                    Docker
                   </li>
                   <li className="flex items-center gap-2 text-[15px]">
                     <span className="w-2 h-2 bg-[#646cff] rounded-full"></span>
-                    AWS, Azure & Microsserviços
+                    AWS, Azure
                   </li>
                 </ul>
               </div>
@@ -140,19 +139,15 @@ export function AboutContent() {
                   </li>
                   <li className="flex items-center gap-2 text-[15px]">
                     <span className="w-2 h-2 bg-[#646cff] rounded-full"></span>
+                    Automatização de tarefas
+                  </li>
+                  <li className="flex items-center gap-2 text-[15px]">
+                    <span className="w-2 h-2 bg-[#646cff] rounded-full"></span>
                     Bancos de Dados Relacionais
                   </li>
                   <li className="flex items-center gap-2 text-[15px]">
                     <span className="w-2 h-2 bg-[#646cff] rounded-full"></span>
-                    Arquitetura de Software Limpa
-                  </li>
-                  <li className="flex items-center gap-2 text-[15px]">
-                    <span className="w-2 h-2 bg-[#646cff] rounded-full"></span>
-                    Testes & Debug
-                  </li>
-                  <li className="flex items-center gap-2 text-[15px]">
-                    <span className="w-2 h-2 bg-[#646cff] rounded-full"></span>
-                    Aprendizado Contínuo
+                    Testes Unitarios & Debug
                   </li>
                 </ul>
               </div>
@@ -167,28 +162,44 @@ export function AboutContent() {
                 <svg className="w-5 h-5 text-[var(--accent-color)]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg>
-                Cursos / Certificações
+                Formações / Cursos
               </h3>
               <ul className="space-y-2 text-[var(--text-secondary)]">
                 <li className="flex items-center gap-2 text-[15px]">
                   <span className="w-2 h-2 bg-[#646cff] rounded-full"></span>
-                  Java Completo - Programação Orientada a Objetos
+                  Tecnico em Informática - UNASP 
                 </li>
                 <li className="flex items-center gap-2 text-[15px]">
                   <span className="w-2 h-2 bg-[#646cff] rounded-full"></span>
-                  Spring Boot & Spring Framework
+                  Engenharia de Software - USF (cursando)
                 </li>
                 <li className="flex items-center gap-2 text-[15px]">
                   <span className="w-2 h-2 bg-[#646cff] rounded-full"></span>
-                  Banco de Dados MySQL & PostgreSQL
+                  Java com Spring - SENAISP (cursando)
                 </li>
                 <li className="flex items-center gap-2 text-[15px]">
                   <span className="w-2 h-2 bg-[#646cff] rounded-full"></span>
-                  Docker & Containerização
+                  Java - HackerRank Certificates
                 </li>
                 <li className="flex items-center gap-2 text-[15px]">
                   <span className="w-2 h-2 bg-[#646cff] rounded-full"></span>
-                  AWS Cloud Practitioner
+                  SQL - HackerRank Certificates
+                </li>
+                <li className="flex items-center gap-2 text-[15px]">
+                  <span className="w-2 h-2 bg-[#646cff] rounded-full"></span>
+                  Rest API - HackerRank Certificates  
+                </li>
+                <li className="flex items-center gap-2 text-[15px]">
+                  <span className="w-2 h-2 bg-[#646cff] rounded-full"></span>
+                  Azure: Implantação de serviços em nuvem AZ-900 - SENAISP
+                </li>
+                <li className="flex items-center gap-2 text-[15px]">
+                  <span className="w-2 h-2 bg-[#646cff] rounded-full"></span>
+                  Azure: Implantação de serviços de IA em nuvem AI-900 - SENAISP
+                </li>
+                <li className="flex items-center gap-2 text-[15px]">
+                  <span className="w-2 h-2 bg-[#646cff] rounded-full"></span>
+                  Back-End / POO / GIT - Santander ada TECH+
                 </li>
               </ul>
             </div>
