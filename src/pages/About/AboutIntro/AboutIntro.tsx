@@ -14,7 +14,7 @@ export function AboutIntro() {
               Sobre Mim
             </h3>
             <p className="text-sm leading-relaxed text-zinc-400">
-              Conheça um pouco mais sobre minha trajetória, experiências e paixões no mundo da tecnologia e desenvolvimento.
+              Conheça um pouco mais sobre minha trajetória na tecnologia, experiências e paixões no mundo da tecnologia e desenvolvimento.
             </p>
           </div>
         </div>
